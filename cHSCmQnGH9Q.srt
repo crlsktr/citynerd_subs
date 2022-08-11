@@ -424,7 +424,7 @@ factores aleatorios y redondeo. Ahora, recuerdan
 
 107
 00:04:20.150 --> 00:04:22.950
-la capacidad de éste giro a la izquierda es 6
+la capacidad de éste giro es 6
 
 108
 00:04:22.950 --> 00:04:26.230
@@ -432,7 +432,7 @@ autos por cada 120 segundos así que pueden ver
 
 109
 00:04:26.230 --> 00:04:28.070
-que hay 8 autos sobre el curso de la
+que hay 8 autos en el transcurso de la
 
 110
 00:04:28.070 --> 00:04:30.469
@@ -440,7 +440,7 @@ hora que llegan a tiempo para el turno
 
 111
 00:04:30.469 --> 00:04:33.270
-de la vuelta protegida a la izquierda pero 6
+de la señal a la izquierda pero 6
 
 112
 00:04:33.270 --> 00:04:35.110
@@ -448,7 +448,7 @@ autos ya han llegado antes que ellos
 
 113
 00:04:35.110 --> 00:04:37.430
-así que ellos no son servido y tienen
+así que ellos no logran pasar y tienen
 
 114
 00:04:37.430 --> 00:04:40.230
@@ -508,27 +508,27 @@ que tienen que esperar 120 segundos
 
 128
 00:05:13.110 --> 00:05:14.950
-adicionales. Justo aquí deberíamos empezar
+adicionales. Justo aquí deberíamos
 
 129
 00:05:14.950 --> 00:05:16.629
-a darnos cuenta de que esto es un
+darnos cuenta de que esto es un
 
 130
 00:05:16.629 --> 00:05:19.270
-problema accumulativo. Así que tomemos una medida
+problema acumulativo. Tomemos una
 
 131
 00:05:19.270 --> 00:05:21.189
-de rendimiento. Vamos a medir el 
+medida de rendimiento. Vamos a medir el 
 
 132
 00:05:21.189 --> 00:05:23.990
-retraso promedio el cual es el más 
+retraso promedio, la métricabmas
 
 133
 00:05:23.990 --> 00:05:26.790
-comúnmente usado para medir el rendimiento de 
+comúnmente usada para medir el rendimiento de 
 
 134
 00:05:26.790 --> 00:05:29.110
@@ -536,11 +536,11 @@ las intersecciones señalizadas. Es la base del
 
 135
 00:05:29.110 --> 00:05:32.469
-"Nivel de Servicio" o "Pérdida". Asumiendo un par
+"Nivel de Servicio" o "NDS".
 
 136
 00:05:32.469 --> 00:05:35.189
-de cosas, digamos que el auto promedio
+Asumamos algo, digamos que el auto promedio
 
 137
 00:05:35.189 --> 00:05:37.670
@@ -552,11 +552,11 @@ si logra pasar en ese ciclo,
 
 139
 00:05:39.749 --> 00:05:41.749
-lo cuál la mayoría logra en éste escenario base
+lo cuál la mayoría logra en éste escenario base,
 
 140
 00:05:41.749 --> 00:05:44.550
-entonces esos autos tendrán un promedio de 60
+esos autos tendrán un promedio de 60
 
 141
 00:05:44.550 --> 00:05:47.270
@@ -564,7 +564,7 @@ segundos de retraso de señal o medio ciclo.
 
 142
 00:05:47.270 --> 00:05:49.110
-Ésta es la forma en la que todos esperan que la 
+Así es como todos esperan que la 
 
 143
 00:05:49.110 --> 00:05:51.590
@@ -572,11 +572,11 @@ intersección opere. Y mientras que se
 
 144
 00:05:51.590 --> 00:05:54.070
-puedan mantener éstas condiciones de tráfico en el
+mantengan éstas condiciones de tráfico en el
 
 145
 00:05:54.070 --> 00:05:56.790
-modo de congestionamiento. En realidad si se puede
+modo de congestionamiento. Si se podría
 
 146
 00:05:56.790 --> 00:05:58.950

@@ -104,13 +104,13 @@ más tarde. Como ven, termino con
 un poquito más que los 
 142.5 que yo esperaba pero ya saben
 factores aleatorios y redondeo. Ahora, recuerdan
-la capacidad de éste giro a la izquierda es 6
+la capacidad de éste giro es 6
 autos por cada 120 segundos así que pueden ver 
-que hay 8 autos sobre el curso de la
+que hay 8 autos en el transcurso de la
 hora que llegan a tiempo para el turno
-de la vuelta protegida a la izquierda pero 6
+de la señal a la izquierda pero 6
 autos ya han llegado antes que ellos
-así que ellos no son servido y tienen
+así que ellos no logran pasar y tienen
 que esperar otro ciclo de 120 segundos.
 Pero de hecho es peor que eso, cada uno
 de los ocho autos pasa al siguiente
@@ -125,24 +125,24 @@ escenario con 150 autos, tenemos
 7 autos adicionales que fueron desplazados
 así que hay un total de 15 autos
 que tienen que esperar 120 segundos 
-adicionales. Justo aquí deberíamos empezar
-a darnos cuenta de que esto es un
-problema accumulativo. Así que tomemos una medida
-de rendimiento. Vamos a medir el 
-retraso promedio el cual es el más 
-comúnmente usado para medir el rendimiento de 
+adicionales. Justo aquí deberíamos
+darnos cuenta de que esto es un
+problema acumulativo. Tomemos una
+medida de rendimiento. Vamos a medir el 
+retraso promedio, la métricabmas
+comúnmente usada para medir el rendimiento de 
 las intersecciones señalizadas. Es la base del
-"Nivel de Servicio" o "Pérdida". Asumiendo un par
-de cosas, digamos que el auto promedio
+"Nivel de Servicio" o "NDS".
+Asumamos algo, digamos que el auto promedio
 se aparece a la mitad del ciclo y 
 si logra pasar en ese ciclo,
-lo cuál la mayoría logra en éste escenario base
-entonces esos autos tendrán un promedio de 60
+lo cuál la mayoría logra en éste escenario base,
+esos autos tendrán un promedio de 60
 segundos de retraso de señal o medio ciclo.
-Ésta es la forma en la que todos esperan que la 
+Así es como todos esperan que la 
 intersección opere. Y mientras que se 
-puedan mantener éstas condiciones de tráfico en el
-modo de congestionamiento. En realidad si se puede
+mantengan éstas condiciones de tráfico en el
+modo de congestionamiento. Si se podría
 continuar añadiendo autos sin ningún retraso promedio
 adicional. Por ejemplo puedo tomar mi
 distribución aleatoria y reducirla
