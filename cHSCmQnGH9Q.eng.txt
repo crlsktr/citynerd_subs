@@ -1,0 +1,583 @@
+
+0:00
+in a previous video i mentioned that
+0:02
+traffic congestion is not a linear
+0:04
+phenomenon every car you add to the
+0:06
+system imposes just a little more delay
+0:09
+on everyone else and each successive car
+0:12
+imposes a bit more delay than the last
+0:14
+one did i don't think this is intuitive
+0:17
+or well understood but it has or at
+0:20
+least it should have
+0:21
+huge policy implications so my hope is
+0:24
+by laying it all out here i can help
+0:26
+spread a little more understanding it's
+0:28
+all up next this is city nerd weekly
+0:30
+content on cities and transportation
+0:33
+usually a top 10 list but sometimes
+0:36
+delving into something a little more
+0:37
+theoretical and welcome to this week
+0:41
+first of all i'm going to start with a
+0:42
+kind of controversial assertion which is
+0:45
+that traffic congestion is bad and
+0:49
+trying to reduce it is actually a worthy
+0:51
+policy goal congestion wastes people's
+0:54
+time and here i really don't care about
+0:56
+single occupant vehicles but a lot of
+0:59
+buses get stuck in the same traffic
+1:01
+congestion consumes more energy it
+1:04
+creates unreliability and uncertainty it
+1:07
+delays emergency vehicles it means it
+1:10
+costs more to move goods through the
+1:12
+city and it tends to grow exponentially
+1:15
+as you add more traffic now there are
+1:18
+some really math heavy theoretical
+1:20
+arguments for why this is the case but i
+1:23
+wanted to put it in a context that's
+1:25
+more intuitive and relatable so i'm
+1:28
+going to give an example we're all
+1:29
+familiar with which is waiting at
+1:31
+traffic signals and there's still going
+1:33
+to be math in this but i think it's
+1:35
+going to be pretty straightforward so
+1:37
+here's the setup it's a typical weekday
+1:39
+and we're at the pm peak hour which
+1:42
+we're going to call 4 30 to 5 30 pm
+1:45
+we're at a really typical urban
+1:47
+signalized intersection with protected
+1:49
+left turns and left turn pockets and
+1:52
+we're looking at a particular movement
+1:54
+which is the eastbound left turn and
+1:57
+let's say the way the signal is
+1:58
+programmed the green time for this
+2:00
+movement never gets extended past 12
+2:02
+seconds because there are a lot of other
+2:04
+busy movements that need to get served
+2:07
+so that's six cars assuming a typical
+2:10
+saturation flow rate of a car every two
+2:12
+seconds in reality that can vary it's
+2:15
+less than six if there are people
+2:18
+on their phone not paying attention to
+2:19
+the signal or it could be more if the
+2:22
+driving is super aggressive but six is
+2:25
+gonna be a pretty typical traffic
+2:27
+engineering assumption now for that
+2:28
+eastbound left turn i've set up kind of
+2:31
+a generic demand profile for the hour
+2:33
+this isn't the one i'm gonna use for our
+2:35
+real world example but this generic
+2:37
+profile has a peak demand of five cars
+2:40
+per 120 second cycle at 5 pm and then
+2:44
+4.5 vehicles at the beginning and end of
+2:48
+the hour this is fairly typical in an
+2:50
+urban setting where the peak of the peak
+2:52
+is something like 10
+2:54
+higher than the minutes at the edge of
+2:56
+the peak hour but of course actual
+2:59
+observed traffic volumes are not regular
+3:01
+and predictable like this otherwise well
+3:04
+let's just say transportation planning
+3:06
+and traffic engineering would be way
+3:08
+easier with the generic profile only the
+3:11
+signal would operate fine because you'd
+3:13
+always have this smooth demand that runs
+3:16
+just under the capacity but
+3:18
+traffic isn't consistent instead it is
+3:21
+stochastic the traffic volume at any
+3:24
+given minute is random but generally
+3:26
+along kind of a normal distribution of
+3:29
+the average demand so i took my generic
+3:31
+profile and i applied a spreadsheet
+3:34
+function that generates a number that's
+3:37
+randomized along a normal distribution
+3:39
+for the average demand of each 120
+3:43
+second increment so what you get is a
+3:45
+set of 30 numbers one for each two
+3:48
+minute signal cycle that are random but
+3:50
+they center around that generic profile
+3:53
+and this is starting to look more like
+3:55
+what you'd see on an average day except
+3:57
+well they're fractions so of course
+4:00
+we're gonna round them but we're gonna
+4:02
+keep these raw fractional numbers in our
+4:04
+back pocket because they're gonna come
+4:06
+in handy later so you'll see i end up
+4:08
+with 150 cars during the hour which is a
+4:12
+tiny bit higher than the
+4:13
+142.5 that i expected but you know
+4:17
+random factors and rounding now remember
+4:20
+the capacity of this left turn is six
+4:22
+vehicles per 120 seconds so you can see
+4:26
+that there are eight vehicles over the
+4:28
+course of the hour that arrive in time
+4:30
+for a protected turn phase but six
+4:33
+vehicles have already arrived ahead of
+4:35
+them so they don't get served and they
+4:37
+have to wait another 120 second cycle
+4:40
+but it's actually worse than that each
+4:42
+of the eight vehicles spills into the
+4:44
+next cycle taking away some of the
+4:46
+capacity that was supposed to be
+4:48
+available for the vehicles that arrived
+4:51
+in the next two minutes so depending on
+4:53
+how much demand there was for the next
+4:56
+cycle you can potentially have a
+4:58
+cascading effect here so for this first
+5:01
+baseline scenario with 150 cars you get
+5:04
+seven additional cars that are displaced
+5:08
+so there are actually a total of 15 cars
+5:10
+that have to wait the additional 120
+5:13
+seconds right here you should already
+5:14
+start to realize that this is a
+5:16
+compounding problem so let's set up a
+5:19
+performance measure we're going to track
+5:21
+average delay which is probably the most
+5:24
+commonly used metric for signalized
+5:26
+intersection performance it's the basis
+5:29
+of level of service or loss so a few
+5:32
+assumptions let's say the average car
+5:35
+shows up halfway through the cycle and
+5:37
+if it gets served within that cycle
+5:39
+which most of them do in this baseline
+5:41
+scenario then those cars will average 60
+5:44
+seconds of signal delay or half to cycle
+5:47
+this is the way everyone hopes the
+5:49
+intersection operates and as long as you
+5:51
+can keep traffic conditions in the
+5:54
+uncongested regime you can really keep
+5:56
+adding cards without any additional
+5:58
+average delay so for example i can take
+6:01
+my randomized distribution and scale it
+6:04
+down until there's no congestion at all
+6:07
+this happens at about 120 vehicles and
+6:10
+in that case the average delay is 60
+6:12
+seconds no one is getting hit with an
+6:14
+extra cycle you really can't do better
+6:16
+than this but at 150 vehicles i've got
+6:19
+135 that are waiting just the 60 seconds
+6:23
+and i've got 15 that are waiting an
+6:25
+additional 120 seconds that's a total of
+6:28
+10 800 seconds divided by 150 vehicles
+6:33
+that's 72 seconds per vehicle and note
+6:36
+that eight of my 30 cycles are now right
+6:38
+at capacity and nine are over capacity
+6:42
+so odds are the next car that shows up
+6:45
+is probably going to have to weigh an
+6:47
+additional cycle okay so that's what the
+6:49
+left turn looks like when it's starting
+6:51
+to creep into a congested state now
+6:53
+let's add 10 vehicles i'm gonna scale up
+6:56
+my raw unrounded numbers until the
+6:58
+rounded distribution
+7:00
+adds up to 160. and this is what that
+7:03
+looks like 10 of my 32 second increments
+7:07
+now have an additional vehicle those
+7:09
+vehicles push other vehicles into
+7:11
+failure too so you should really start
+7:14
+to intuit that this is a domino effect
+7:17
+and it's gonna get progressively worse
+7:19
+every time i add 10 more cars this
+7:21
+vehicle that shows up at 440 is the
+7:24
+worst case it impacts the next four
+7:26
+cycles adding another 120 seconds of
+7:29
+delay for one vehicle in each of those
+7:31
+four cycles so the bottom line is i've
+7:34
+only added 10 vehicles that's 6.7
+7:38
+but my average delay goes from 72
+7:40
+seconds to 81 and that's a 12.5 increase
+7:44
+also where 17 of my 30 cycles were at or
+7:48
+over capacity when i had 150 vehicles
+7:51
+now 20 of the 30 cycles are which again
+7:55
+is increasing the probability that the
+7:57
+next car will hit a cycle that's already
+8:00
+maxed out i'm going to go through
+8:02
+additional scenarios and talk about
+8:03
+policy implications etc but first if
+8:07
+you're getting value out of this video
+8:09
+please pay your respects to the
+8:10
+algorithm and in general if you enjoy
+8:13
+nerdy explorations of transportation in
+8:16
+cities go ahead and subscribe if you
+8:18
+haven't already it's much appreciated
+8:20
+okay i won't get too far into the
+8:22
+details of the remaining scenarios
+8:24
+because it's the same story and it just
+8:26
+gets messier but here's what happens
+8:29
+at 170 vehicles the average delay is 98
+8:32
+seconds so we increased the original
+8:35
+volume of 150 by 13.3 percent but your
+8:39
+average delay is up 36
+8:41
+then at 180 vehicles your average delay
+8:44
+is 144 seconds so you've scaled your
+8:48
+traffic volume up 20
+8:50
+but you've increased the average delay
+8:52
+by a hundred percent you've doubled it
+8:55
+remember this is the same randomized
+8:57
+demand curve i started with i'm just
+8:59
+scaling it up and down the precise
+9:01
+percentages i'm citing will change if i
+9:04
+start with a different random number
+9:05
+seeding but the overall story is always
+9:08
+going to be the same this is exponential
+9:10
+growth and really by this point people
+9:13
+are starting to look at different routes
+9:15
+that avoid this left turn people are
+9:17
+taking the bus and biking or adjusting
+9:20
+their departure time or just not making
+9:23
+a trip at all and the city traffic
+9:25
+engineer is definitely getting phone
+9:27
+calls so a couple notes first despite
+9:30
+the way i characterized traffic dynamics
+9:32
+here there's really no such thing as
+9:35
+existing traffic that was minding its
+9:37
+own business and additional traffic
+9:40
+that's causing all the problems if
+9:42
+traffic is in a congested state then
+9:45
+every driver is really sharing equally
+9:47
+in the blame and the consequences as a
+9:50
+driver you perceive congestion as
+9:52
+something that's happening to you but
+9:54
+the reality is you are the congestion
+9:57
+second keep in mind this is very
+9:58
+simplified actual urban traffic is
+10:01
+dynamic and complex and congestion
+10:03
+manifests in a lot of ways for example
+10:06
+in a congested state that 12 second left
+10:09
+turn phase may not be able to
+10:11
+accommodate six vehicles you could have
+10:14
+spill back from a downstream bottleneck
+10:16
+that blocks the receiving lane you could
+10:18
+have excessive cueing in the through
+10:21
+lane that blocks the churn pocket so you
+10:24
+can't queue up six vehicles for the
+10:26
+phase and on the flip side the turn lane
+10:28
+itself can overflow and block the
+10:31
+through lane so these are all ways that
+10:33
+congested conditions reduce the actual
+10:36
+efficiency of the system so really what
+10:39
+i've presented here is kind of an
+10:41
+optimistic scenario so the point i hope
+10:43
+i've driven home here is not only do
+10:46
+more cars mean more congestion each
+10:48
+additional car means exponentially more
+10:51
+congestion which is bad for everyone so
+10:54
+what's the solution for some people
+10:56
+usually the people who are in charge of
+10:58
+policy and funding what this all
+11:00
+suggests is you really need to build
+11:03
+roads and intersections as big as
+11:05
+possible so you never reach the
+11:07
+congested state you can go to pretty
+11:09
+much any us state and see this approach
+11:12
+in action and decide for yourself if it
+11:14
+actually works or not another approach
+11:17
+is to make sure that the alternatives to
+11:19
+driving are abundant and competitive so
+11:22
+that when you do start tipping over into
+11:24
+hyper congestion people have the freedom
+11:27
+to make other choices or and hear me out
+11:31
+congestion pricing get people to pay for
+11:33
+the privilege of driving on an efficient
+11:36
+reliable uncongested network and invest
+11:40
+the proceeds in transit and active
+11:42
+transportation i made that sound simple
+11:44
+there's a lot to get into there and i'll
+11:46
+probably do that in a future video but
+11:48
+feel free to let me know your thoughts
+11:50
+on congestion pricing down in the
+11:52
+comments below and that's all i've got
+11:55
+for today keep the great comments and
+11:57
+viewer suggestions coming they really do
+11:59
+make this a better channel thanks for
+12:00
+joining and i'll be back with a new
+12:02
+topic next week see you then

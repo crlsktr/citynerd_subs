@@ -1,0 +1,583 @@
+
+0:00
+En un video anterior mencioné que
+0:02
+la congestión viál no es un fenómeno linear.
+0:04
+Cada auto que añades al sistema
+0:06
+impone un poco más de retraso a todos
+0:09
+los demás y cada auto sucesivo
+0:12
+impone un poco más de retraso que el anterior
+0:14
+No creo que ésto sea muy intuitivo
+0:17
+o bién entendido, pero ha tenido o al
+0:20
+menos debería de tener
+0:21
+inmensas implicaciones políticas. Así que mi esperanza es que
+0:24
+al exponerlo todo aquí pueda ayudar a
+0:26
+esparcir un poco de comprensión. Eso
+0:28
+es lo que viene. Ésto es CityNerd, contenido
+0:30
+semanal sobre ciudades y transporte.
+0:33
+Usualmente es un top 10 pero algunas veces
+0:36
+abarcamos algo un poco más
+0:37
+teorético y bienvenidos esta semana.
+0:41
+Antes que nada voy a empezar con una 
+0:42
+afirmación algo controversial, la cual es
+0:45
+que la congestión vial es mala y que
+0:49
+tratar de reducirla es, de hecho, una digna
+0:51
+meta política. La congestión desperdicia el tiempo
+0:54
+de la gente y aquí en realidad no me importan
+0:56
+los autos de un sólo ocupante, pero muchos de los
+0:59
+buses buses terminan atorados en el mismo tráfico.
+1:01
+La congestión consume más energía, 
+1:04
+crea poca exactitud e incertidumbre,
+1:07
+retrasa vehículos de emergencias, significa que
+1:10
+ahora cuesta más movilizar los bienes a través.
+1:12
+de la ciudad y tiende a crecer exponencialmente
+1:15
+conforme añádes más tráfico. Hay
+1:18
+hay algunos argumentos llenos de teorías matemáticas
+1:20
+que explican por qué ese es el caso pero
+1:23
+quería ponerlo en un contexto que es
+1:25
+más intuitivo y comprensible así que
+1:28
+voy a dar un ejemplo con el que todos estamos
+1:29
+familiarizados como lo es esperar 
+1:31
+en una señal. Aún va a haber 
+1:33
+matemáticas en esto pero creo que va a
+1:35
+ser bastante sencillo así que aquí está el
+1:37
+escenario es un día típico entre semana
+1:39
+y estamos en el píco de la tarde el cual
+1:42
+vamos a llamar las 4:30 - 5:30 PM
+1:45
+estamos en una típica intersección urbana 
+1:47
+señalizada con un giro protegido a la izquierda
+1:49
+y carril de giro izquierdo y 
+1:52
+estamos viendo a un movimiento particular
+1:54
+como lo es el giro izquierdo hacia el este y
+1:57
+digamos que el programa del semáforo dice 
+1:58
+que el tiempo de luz verde para éste movimiento
+2:00
+jamás debe de exceder más de 12
+2:02
+segundos porque hay muchos otros 
+2:04
+movimientos ocupados que necesitan su turno
+2:07
+así que son 6 autos asumiendo un flujo de
+2:10
+saturación típico de un auto cada 2
+2:12
+segundos. En realidad eso puede variar
+2:15
+es menos de 6 si hay gente viendo
+2:18
+sus teléfonos sin prestarle atención a
+2:19
+el semáforo o podría ser más si
+2:22
+los pilotos son super agresivos pero 6 es
+2:25
+la suposición bastante típica de la 
+2:27
+ingeniería de tráfico. Ahora para ese
+2:28
+giro hacia el Éste, preparé un perfíl
+2:31
+más o menos genérico de demanda para la hora.
+2:33
+Éste no es el que voy a usar para nuestro
+2:35
+ejemplo del mundo real pero éste perfil
+2:37
+tiene un pico de demanda de 5 autos
+2:40
+por cada ciclo de 120 segundos a las 5 PM y luego
+2:44
+4.5 autos al principio y al fin de 
+2:48
+la hora. Ésto es bastante típico en un ambiente
+2:50
+urbano donde el pico del pico 
+2:52
+es algo así como 10 más alto
+2:54
+que los minutos a la los lados
+2:56
+de la hora pico. Pero claro, los volúmenes de 
+2:59
+tráfico observados actuales no son regulares
+3:01
+y predecibles como éste, de lo contrario,
+3:04
+digamos que el planeamiento de transporte
+3:06
+y la ingeniería de tráfico serían mucho
+3:08
+más fáciles. Con el perfíl genérico sólo
+3:11
+la señal operaría bien porque tendrías
+3:13
+siempre esta demanda suave que corre
+3:16
+justo bajo la capacidad pero
+3:18
+el tráfico no es consistente. Al contrario es
+3:21
+estocástico. El volumen de tráfico en cualquier
+3:24
+minuto es aleatorio pero generalmente
+3:26
+sigue más o menos una distribución normal de
+3:29
+la demanda promedio así que tomé mi perfíl
+3:31
+genérico y le apliqué una función
+3:34
+que genera un número que es aleatorio 
+3:37
+sobre una distribución normal
+3:39
+para la demanda promedio de cada incrememento
+3:43
+de 120 segundos para obtener un
+3:45
+set de 30 números uno para cada ciclo de
+3:48
+2 minutos en la señal que son aleatorios pero
+3:50
+centrados alrededor de ese perfíl genérico.
+3:53
+Y ésto se empieza a paracer más a lo
+3:55
+que verías en un día promedio excepto
+3:57
+que son fracciones así que por supuesto
+4:00
+vamos a redondear pero también vamos a 
+4:02
+guardar las fracciones en el bolsillo
+4:04
+porque nos van a ser útiles
+4:06
+más tarde. Como ven, termino con 
+4:08
+150 autos durante la hora, lo que es
+4:12
+un poquito más que los 
+4:13
+142.5 que yo esperaba pero ya saben
+4:17
+factores aleatorios y redondeo. Ahora, recuerdan
+4:20
+la capacidad de éste giro a la izquierda es 6
+4:22
+autos por cada 120 segundos así que pueden ver 
+4:26
+que hay 8 autos sobre el curso de la
+4:28
+hora que llegan a tiempo para el turno
+4:30
+de la vuelta protegida a la izquierda pero 6
+4:33
+autos ya han llegado antes que ellos
+4:35
+así que ellos no son servido y tienen
+4:37
+que esperar otro ciclo de 120 segundos.
+4:40
+Pero de hecho es peor que eso, cada uno
+4:42
+de los ocho autos pasa al siguiente
+4:44
+ciclo y le quita un poco de la 
+4:46
+capacidad que se suponía estaría
+4:48
+disponible para los autos que llegaran
+4:51
+en los siguientes 2 minutos así que dependiendo
+4:53
+de cuánta demanda haya para el siguiente
+4:56
+ciclo, potencialmente tendrías un efecto de 
+4:58
+cascada. Así que para éste primer 
+5:01
+escenario con 150 autos, tenemos
+5:04
+7 autos adicionales que fueron desplazados
+5:08
+así que hay un total de 15 autos
+5:10
+que tienen que esperar 120 segundos 
+5:13
+adicionales. Justo aquí deberíamos empezar
+5:14
+a darnos cuenta de que esto es un
+5:16
+problema accumulativo. Así que tomemos una medida
+5:19
+de rendimiento. Vamos a medir el 
+5:21
+retraso promedio el cual es el más 
+5:24
+comúnmente usado para medir el rendimiento de 
+5:26
+las intersecciones señalizadas. Es la base del
+5:29
+"Nivel de Servicio" o "Pérdida". Asumiendo un par
+5:32
+de cosas, digamos que el auto promedio
+5:35
+se aparece a la mitad del ciclo y 
+5:37
+si logra pasar en ese ciclo,
+5:39
+lo cuál la mayoría logra en éste escenario base
+5:41
+entonces esos autos tendrán un promedio de 60
+5:44
+segundos de retraso de señal o medio ciclo.
+5:47
+Ésta es la forma en la que todos esperan que la 
+5:49
+intersección opere. Y mientras que se 
+5:51
+puedan mantener éstas condiciones de tráfico en el
+5:54
+modo de congestionamiento. En realidad si se puede
+5:56
+continuar añadiendo autos sin ningún retraso promedio
+5:58
+adicional. Por ejemplo puedo tomar mi
+6:01
+distribución aleatoria y reducirla
+6:04
+hasta que ya no haya ninguna congestión.
+6:07
+Ésto pasa más o menos al llegar a los 120 autos y
+6:10
+en ese caso el retraso promedio es 60
+6:12
+segundos. A nadie le toca esperar un 
+6:14
+ciclo extra. Es lo mejor que podemos lograr
+6:16
+pero al subir a 150 autos tenemos 
+6:19
+135 autos que están esperando 60 segundos únicamente
+6:23
+y tenemos 15 que les toca esperar un promedio de 
+6:25
+120 segundos adicionales. Lo que es un total de 
+6:28
+10 800 segundos, divididos en los 150 autos
+6:33
+eso es 72 segundos por auto en promedio y tomen en cuenta
+6:36
+que 8 de los 30 ciclos están ocupados 
+6:38
+completamente y 9 están sobre su capacidad
+6:42
+así que probablemente el próximo auto que aparezca 
+6:45
+va a tener que esperar un ciclo
+6:47
+adicional. Okay, así es cómo se ve el giro a la
+6:49
+izquierda cuando empieza a ponerse en
+6:51
+un estado congestionado. Ahora
+6:53
+Agreguemos 10 autos. Voy a incrementar mis
+6:56
+números sin redondear hasta que 
+6:58
+la distribución redondeada
+7:00
+llegue a los 160. Y así es cómo se ve.
+7:03
+Al parecer 10 de mis 32 incrementos secundarios
+7:07
+tienen un auto adicional. Éstos
+7:09
+autos empujan otros autos fuera del ciclo
+7:11
+y deberíamos de en verdad empezar a sentir
+7:14
+que ésto es un efecto dominó y
+7:17
+se va a poner peor progresivamente
+7:19
+cada vez que le añado 10 autos más. Éste
+7:21
+auto que se aparece en el 440 es el peor
+7:24
+de los casos, impacta los siguientes 4
+7:26
+ciclos añadiendo otros 120 segundos de 
+7:29
+retraso por cada vehículo en cada uno de
+7:31
+los cuatro ciclose siguientes. Al fin de cuentas
+7:34
+sólo añadí 10 autos. Lo que corresponde a 6.7 segundos
+7:38
+pero mi retraso promedio pasa de los 72
+7:40
+segundos a 81 y ése es un incremento promedio de 12.5
+7:44
+también 17 de mis 30 ciclos estaban justo a
+7:48
+capacidad o más cuando tenía 150 autos
+7:51
+ahora 20 de los 30 están así. Lo que, de nuevo,
+7:55
+está incrementando la probabilidad de que
+7:57
+el próximo auto le toque un ciclo que ya está 
+8:00
+completamente lleno. Voy a pasar por los siguientes
+8:02
+escenarios adicionales y hablar sobre
+8:03
+las implicaciones de reglamentos y etc. Pero primero
+8:07
+si le están sacando valor a éste video
+8:09
+por favor denle sus respetos al 
+8:10
+algoritmo de youtube y en general si disfrutan
+8:13
+exploraciones nerd de transporte en
+8:16
+ciudades, pásen y subsríbance si no lo han 
+8:18
+hecho ya. Se los agradezco mucho.
+8:20
+Okay, no voy a entrar a fondo en los
+8:22
+detalles de los escenarios que quedan
+8:24
+porque es la misma historia y sólo se pone
+8:26
+más caótica. Pero ésto es lo que pasa.
+8:29
+A los 170 autos el promedio de retraso es 98
+8:32
+segundos así que incrementamos el volúmen de tráfico 
+8:35
+original de 150 por 13.3% pero el retraso 
+8:39
+promedio es de 36 segundos
+8:41
+Luego a los 180 el retraso promedio es de
+8:44
+144 segundos. Osea que al aumentar tu
+8:48
+volúmen de tráfico por 20%
+8:50
+le incrementas el retraso promedio por cada auto
+8:52
+por 100%; lo duplicamos.
+8:55
+Recuerden que ésta es la misma curva de 
+8:57
+demanda aleatoria con la que empezé sólo la estoy ajustando
+8:59
+hacia arriba o abajo, el porcentaje preciso
+9:01
+que estoy mencionando va a cambiar si
+9:04
+empiezo con un número aleatorio diferente
+9:05
+inicial pero la historia en sí siempre va
+9:08
+a ser éste mismo crecimiento
+9:10
+exponencial y en realidad a éstas alturas
+9:13
+la genta va a empezar a buscar diferentes rutas
+9:15
+para evitar éste giro a la izquierda.
+9:17
+Van a tomar el bus, ir en bicicleta, o ajustar
+9:20
+su hora de partida o simplemente no salir
+9:23
+del todo y el ingeniero de tráfico de la ciudad
+9:25
+definitivamente va a recibir llamadas al respecto.
+9:27
+Así que un par de notas antes, a pesar de
+9:30
+la forma en que yo caracterizo aquí 
+9:32
+la dinámica de tráfico no hay tal tráfico
+9:35
+existente que simplemente esté sin molestar
+9:37
+a nadie y tráfico adicional que sea el que está
+9:40
+causando todos los problemas. Si el 
+9:42
+tránsito está en un estado congestionado entonces
+9:45
+cada conductor es igualmente responsable
+9:47
+de la culpa y las consecuencias.
+9:50
+Cómo un conductor percivimos la congestión como
+9:52
+algo que nos está pasando pero,
+9:54
+la realidad es que tú eres la congestión.
+9:57
+Segundo, consideren que éste es un modelo muy
+9:58
+simplificado y el tráfico urbano es
+10:01
+dinámico y complejo, y la congestión
+10:03
+se manifiesta en muchas formas, por ejemplo
+10:06
+en un estado congestionado, ese ciclo de 12
+10:09
+del giro a la izquierda puede que no pueda
+10:11
+acomodar 6 autos que podrían haber venido
+10:14
+de otro embotellamiento más adelante
+10:16
+lo cual bloquea el carril receptor.
+10:18
+Podrías tener encolamiento excesivo en el
+10:21
+carril sin giro lo cual bloquea la cola para la izquierda
+10:24
+y ya no podrías encolar los 6 vehículos por ciclo
+10:26
+en el revés de los casos, el carril de giro puede
+10:28
+sobrellenarse y bloquear el carril sin giro.
+10:31
+Y todas éstas son maneras en las que
+10:33
+las condiciones congestionadas reducen la
+10:36
+eficiencia del sistema. Así que lo que les 
+10:39
+presenté aquí es más que nada un
+10:41
+escenario optimista, así que el punto que espero que
+10:43
+se lleven es que no sólo los autos adicionales
+10:46
+crean más congestión, sino que cada auto adicional
+10:48
+crea más congestión exponencialmente.
+10:51
+Lo cual es malo para todos así que
+10:54
+¿Cuál es la solución? para algunas personas,
+10:56
+usualmente las personas que están a cargo de la
+10:58
+política víal y los fondos públicos, tódo esto
+11:00
+sugiere que en realidad lo que necesitan es
+11:03
+construir caminos e intersecciones tan grandes como
+11:05
+sea posible para que nunca lleguemos a un estado
+11:07
+congestionado. Pueden ir prácticamente a cualquier
+11:09
+Estado en los Estados Unidos y ver éste criterio
+11:12
+en práctica y decidir por si mismos si de verdad
+11:14
+funciona o no. Otra enfoque es
+11:17
+asegurarse de que las alternativas a conducir
+11:19
+sean abundantes y competitivas así que 
+11:22
+cuando el tráfico empieze a ponerse hyper
+11:24
+congestionado la gente tenga la libertad
+11:27
+de tomar otras decisiones, o tal vez, escúchenme
+11:31
+ponerle precio a la congestión, lograr que la 
+11:33
+gente pague por el privilegio de conducir en una
+11:36
+red víal eficiente, confiable y sin congestión, e invertir
+11:40
+los fondos en otros medios de tránsito y transporte
+11:42
+activo. Hice que eso suene fácil.
+11:44
+Hay mucho que discutir allí y probablemente
+11:46
+lo voy a hacer en un video futuro pero sientanse
+11:48
+libres de dejarme saber lo que piensan
+11:50
+sobre el ponerle precio a la congestión en los
+11:52
+comentario abajo y eso es todo lo que tengo
+11:55
+por hoy. Sigan mandandome sus comentarios geniales
+11:57
+y sugerencias del público. Si que 
+11:59
+hacen éste un mejor canal, gracias por
+12:00
+venir y volveré con un tema nuevo
+12:02
+la próxima semana así que los veré entonces!
