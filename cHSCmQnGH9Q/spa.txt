@@ -168,7 +168,7 @@ Agreguemos 10 autos. Voy a incrementar mis
 números sin redondear hasta que 
 la distribución redondeada
 llegue a los 160. Y así es cómo se ve.
-Al parecer 10 de mis 32 incrementos secundarios
+10 de mis 32 incrementos secundarios
 tienen un auto adicional. Éstos
 autos empujan otros autos fuera del ciclo
 y deberíamos de en verdad empezar a sentir

@@ -680,7 +680,7 @@ llegue a los 160. Y así es cómo se ve.
 
 171
 00:07:03.510 --> 00:07:07.350
-Al parecer 10 de mis 32 incrementos secundarios
+10 de mis 32 incrementos secundarios
 
 172
 00:07:07.350 --> 00:07:09.430
