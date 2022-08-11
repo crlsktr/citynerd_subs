@@ -1,1164 +1,291 @@
-1
-00:00:00.080 --> 00:00:02.070
 En un video anterior mencioné que
-
-2
-00:00:02.070 --> 00:00:04.230
 la congestión viál no es un fenómeno linear.
-
-3
-00:00:04.230 --> 00:00:06.389
 Cada auto que añades al sistema
-
-4
-00:00:06.389 --> 00:00:09.509
 impone un poco más de retraso a todos
-
-5
-00:00:09.509 --> 00:00:12.709
 los demás y cada auto sucesivo
-
-6
-00:00:12.709 --> 00:00:14.870
 impone un poco más de retraso que el anterior
-
-7
-00:00:14.870 --> 00:00:17.349
 No creo que ésto sea muy intuitivo
-
-8
-00:00:17.349 --> 00:00:19.990
 o bién entendido, pero ha tenido o al
-
-9
-00:00:19.990 --> 00:00:21.670
 menos debería de tener
-
-10
-00:00:21.670 --> 00:00:24.630
 inmensas implicaciones políticas. Así que mi esperanza es que
-
-11
-00:00:24.630 --> 00:00:26.550
 al exponerlo todo aquí pueda ayudar a
-
-12
-00:00:26.550 --> 00:00:28.470
 esparcir un poco de comprensión. Eso
-
-13
-00:00:28.470 --> 00:00:30.790
 es lo que viene. Ésto es CityNerd, contenido
-
-14
-00:00:30.790 --> 00:00:33.190
 semanal sobre ciudades y transporte.
-
-15
-00:00:33.190 --> 00:00:35.990
 Usualmente es un top 10 pero algunas veces
-
-16
-00:00:35.990 --> 00:00:37.670
 abarcamos algo un poco más
-
-17
-00:00:37.670 --> 00:00:41.030
 teorético y bienvenidos esta semana.
-
-18
-00:00:41.030 --> 00:00:42.869
 Antes que nada voy a empezar con una 
-
-19
-00:00:42.869 --> 00:00:45.510
 afirmación algo controversial, la cual es
-
-20
-00:00:45.510 --> 00:00:49.110
 que la congestión vial es mala y que
-
-21
-00:00:49.110 --> 00:00:51.510
 tratar de reducirla es, de hecho, una digna
-
-22
-00:00:51.510 --> 00:00:54.150
 meta política. La congestión desperdicia el tiempo
-
-23
-00:00:54.150 --> 00:00:56.630
 de la gente y aquí en realidad no me importan
-
-24
-00:00:56.630 --> 00:00:59.430
 los autos de un sólo ocupante, pero muchos de los
-
-25
-00:00:59.430 --> 00:01:01.750
 buses buses terminan atorados en el mismo tráfico.
-
-26
-00:01:01.750 --> 00:01:04.149
 La congestión consume más energía, 
-
-27
-00:01:04.149 --> 00:01:07.750
 crea poca exactitud e incertidumbre,
-
-28
-00:01:07.750 --> 00:01:10.630
 retrasa vehículos de emergencias, significa que
-
-29
-00:01:10.630 --> 00:01:12.630
 ahora cuesta más movilizar los bienes a través.
-
-30
-00:01:12.630 --> 00:01:15.749
 de la ciudad y tiende a crecer exponencialmente
-
-31
-00:01:15.749 --> 00:01:17.990
 conforme añádes más tráfico. Hay
-
-32
-00:01:17.990 --> 00:01:20.310
 hay algunos argumentos llenos de teorías matemáticas
-
-33
-00:01:20.310 --> 00:01:23.030
 que explican por qué ese es el caso pero
-
-34
-00:01:23.030 --> 00:01:25.429
 quería ponerlo en un contexto que es
-
-35
-00:01:25.429 --> 00:01:28.070
 más intuitivo y comprensible así que
-
-36
-00:01:28.070 --> 00:01:29.590
 voy a dar un ejemplo con el que todos estamos
-
-37
-00:01:29.590 --> 00:01:31.670
 familiarizados como lo es esperar 
-
-38
-00:01:31.670 --> 00:01:33.670
 en una señal. Aún va a haber 
-
-39
-00:01:33.670 --> 00:01:35.270
 matemáticas en esto pero creo que va a
-
-40
-00:01:35.270 --> 00:01:37.030
 ser bastante sencillo así que aquí está el
-
-41
-00:01:37.030 --> 00:01:39.830
 escenario es un día típico entre semana
-
-42
-00:01:39.830 --> 00:01:42.230
 y estamos en el píco de la tarde el cual
-
-43
-00:01:42.230 --> 00:01:45.190
 vamos a llamar las 4:30 - 5:30 PM
-
-44
-00:01:45.190 --> 00:01:47.429
 estamos en una típica intersección urbana 
-
-45
-00:01:47.429 --> 00:01:49.910
 señalizada con un giro protegido a la izquierda
-
-46
-00:01:49.910 --> 00:01:52.710
 y carril de giro izquierdo y 
-
-47
-00:01:52.710 --> 00:01:54.550
 estamos viendo a un movimiento particular
-
-48
-00:01:54.550 --> 00:01:57.030
 como lo es el giro izquierdo hacia el este y
-
-49
-00:01:57.030 --> 00:01:58.630
 digamos que el programa del semáforo dice 
-
-50
-00:01:58.630 --> 00:02:00.389
 que el tiempo de luz verde para éste movimiento
-
-51
-00:02:00.389 --> 00:02:02.709
 jamás debe de exceder más de 12
-
-52
-00:02:02.709 --> 00:02:04.950
 segundos porque hay muchos otros 
-
-53
-00:02:04.950 --> 00:02:07.030
 movimientos ocupados que necesitan su turno
-
-54
-00:02:07.030 --> 00:02:09.990
 así que son 6 autos asumiendo un flujo de
-
-55
-00:02:09.990 --> 00:02:12.949
 saturación típico de un auto cada 2
-
-56
-00:02:12.949 --> 00:02:15.510
 segundos. En realidad eso puede variar
-
-57
-00:02:15.510 --> 00:02:18.229
 es menos de 6 si hay gente viendo
-
-58
-00:02:18.229 --> 00:02:19.910
 sus teléfonos sin prestarle atención a
-
-59
-00:02:19.910 --> 00:02:22.309
 el semáforo o podría ser más si
-
-60
-00:02:22.309 --> 00:02:25.350
 los pilotos son super agresivos pero 6 es
-
-61
-00:02:25.350 --> 00:02:27.110
 la suposición bastante típica de la 
-
-62
-00:02:27.110 --> 00:02:28.869
 ingeniería de tráfico. Ahora para ese
-
-63
-00:02:28.869 --> 00:02:31.030
 giro hacia el Éste, preparé un perfíl
-
-64
-00:02:31.030 --> 00:02:33.830
 más o menos genérico de demanda para la hora.
-
-65
-00:02:33.830 --> 00:02:35.589
 Éste no es el que voy a usar para nuestro
-
-66
-00:02:35.589 --> 00:02:37.750
 ejemplo del mundo real pero éste perfil
-
-67
-00:02:37.750 --> 00:02:40.790
 tiene un pico de demanda de 5 autos
-
-68
-00:02:40.790 --> 00:02:44.869
 por cada ciclo de 120 segundos a las 5 PM y luego
-
-69
-00:02:44.869 --> 00:02:48.229
 4.5 autos al principio y al fin de 
-
-70
-00:02:48.229 --> 00:02:50.470
 la hora. Ésto es bastante típico en un ambiente
-
-71
-00:02:50.470 --> 00:02:52.869
 urbano donde el pico del pico 
-
-72
-00:02:52.869 --> 00:02:54.710
 es algo así como 10 más alto
-
-73
-00:02:54.710 --> 00:02:56.869
 que los minutos a la los lados
-
-74
-00:02:56.869 --> 00:02:59.030
 de la hora pico. Pero claro, los volúmenes de 
-
-75
-00:02:59.030 --> 00:03:01.430
 tráfico observados actuales no son regulares
-
-76
-00:03:01.430 --> 00:03:04.229
 y predecibles como éste, de lo contrario,
-
-77
-00:03:04.229 --> 00:03:06.229
 digamos que el planeamiento de transporte
-
-78
-00:03:06.229 --> 00:03:08.390
 y la ingeniería de tráfico serían mucho
-
-79
-00:03:08.390 --> 00:03:11.270
 más fáciles. Con el perfíl genérico sólo
-
-80
-00:03:11.270 --> 00:03:13.509
 la señal operaría bien porque tendrías
-
-81
-00:03:13.509 --> 00:03:16.070
 siempre esta demanda suave que corre
-
-82
-00:03:16.070 --> 00:03:18.390
 justo bajo la capacidad pero
-
-83
-00:03:18.390 --> 00:03:21.430
 el tráfico no es consistente. Al contrario es
-
-84
-00:03:21.430 --> 00:03:23.990
 estocástico. El volumen de tráfico en cualquier
-
-85
-00:03:23.990 --> 00:03:26.789
 minuto es aleatorio pero generalmente
-
-86
-00:03:26.789 --> 00:03:29.030
 sigue más o menos una distribución normal de
-
-87
-00:03:29.030 --> 00:03:31.750
 la demanda promedio así que tomé mi perfíl
-
-88
-00:03:31.750 --> 00:03:34.470
 genérico y le apliqué una función
-
-89
-00:03:34.470 --> 00:03:37.270
 que genera un número que es aleatorio 
-
-90
-00:03:37.270 --> 00:03:39.830
 sobre una distribución normal
-
-91
-00:03:39.830 --> 00:03:43.030
 para la demanda promedio de cada incrememento
-
-92
-00:03:43.030 --> 00:03:45.830
 de 120 segundos para obtener un
-
-93
-00:03:45.830 --> 00:03:48.229
 set de 30 números uno para cada ciclo de
-
-94
-00:03:48.229 --> 00:03:50.869
 2 minutos en la señal que son aleatorios pero
-
-95
-00:03:50.869 --> 00:03:53.429
 centrados alrededor de ese perfíl genérico.
-
-96
-00:03:53.429 --> 00:03:55.270
 Y ésto se empieza a paracer más a lo
-
-97
-00:03:55.270 --> 00:03:57.910
 que verías en un día promedio excepto
-
-98
-00:03:57.910 --> 00:04:00.390
 que son fracciones así que por supuesto
-
-99
-00:04:00.390 --> 00:04:02.229
 vamos a redondear pero también vamos a 
-
-100
-00:04:02.229 --> 00:04:04.229
 guardar las fracciones en el bolsillo
-
-101
-00:04:04.229 --> 00:04:06.229
 porque nos van a ser útiles
-
-102
-00:04:06.229 --> 00:04:08.630
 más tarde. Como ven, termino con 
-
-103
-00:04:08.630 --> 00:04:11.990
 150 autos durante la hora, lo que es
-
-104
-00:04:11.990 --> 00:04:13.949
 un poquito más que los 
-
-105
-00:04:13.949 --> 00:04:17.189
 142.5 que yo esperaba pero ya saben
-
-106
-00:04:17.189 --> 00:04:20.150
 factores aleatorios y redondeo. Ahora, recuerdan
-
-107
-00:04:20.150 --> 00:04:22.950
 la capacidad de éste giro es 6
-
-108
-00:04:22.950 --> 00:04:26.230
 autos por cada 120 segundos así que pueden ver 
-
-109
-00:04:26.230 --> 00:04:28.070
 que hay 8 autos en el transcurso de la
-
-110
-00:04:28.070 --> 00:04:30.469
 hora que llegan a tiempo para el turno
-
-111
-00:04:30.469 --> 00:04:33.270
 de la señal a la izquierda pero 6
-
-112
-00:04:33.270 --> 00:04:35.110
 autos ya han llegado antes que ellos
-
-113
-00:04:35.110 --> 00:04:37.430
 así que ellos no logran pasar y tienen
-
-114
-00:04:37.430 --> 00:04:40.230
 que esperar otro ciclo de 120 segundos.
-
-115
-00:04:40.230 --> 00:04:42.469
 Pero de hecho es peor que eso, cada uno
-
-116
-00:04:42.469 --> 00:04:44.790
 de los ocho autos pasa al siguiente
-
-117
-00:04:44.790 --> 00:04:46.790
 ciclo y le quita un poco de la 
-
-118
-00:04:46.790 --> 00:04:48.629
 capacidad que se suponía estaría
-
-119
-00:04:48.629 --> 00:04:51.189
 disponible para los autos que llegaran
-
-120
-00:04:51.189 --> 00:04:53.590
 en los siguientes 2 minutos así que dependiendo
-
-121
-00:04:53.590 --> 00:04:56.070
 de cuánta demanda haya para el siguiente
-
-122
-00:04:56.070 --> 00:04:58.390
 ciclo, potencialmente tendrías un efecto de 
-
-123
-00:04:58.390 --> 00:05:01.510
 cascada. Así que para éste primer 
-
-124
-00:05:01.510 --> 00:05:04.870
 escenario con 150 autos, tenemos
-
-125
-00:05:04.870 --> 00:05:08.070
 7 autos adicionales que fueron desplazados
-
-126
-00:05:08.070 --> 00:05:10.629
 así que hay un total de 15 autos
-
-127
-00:05:10.629 --> 00:05:13.110
 que tienen que esperar 120 segundos 
-
-128
-00:05:13.110 --> 00:05:14.950
 adicionales. Justo aquí deberíamos
-
-129
-00:05:14.950 --> 00:05:16.629
 darnos cuenta de que esto es un
-
-130
-00:05:16.629 --> 00:05:19.270
 problema acumulativo. Tomemos una
-
-131
-00:05:19.270 --> 00:05:21.189
 medida de rendimiento. Vamos a medir el 
-
-132
-00:05:21.189 --> 00:05:23.990
-retraso promedio, la métricabmas
-
-133
-00:05:23.990 --> 00:05:26.790
+retraso promedio, la métrica más
 comúnmente usada para medir el rendimiento de 
-
-134
-00:05:26.790 --> 00:05:29.110
 las intersecciones señalizadas. Es la base del
-
-135
-00:05:29.110 --> 00:05:32.469
 "Nivel de Servicio" o "NDS".
-
-136
-00:05:32.469 --> 00:05:35.189
 Asumamos algo, digamos que el auto promedio
-
-137
-00:05:35.189 --> 00:05:37.670
-se aparece a la mitad del ciclo y 
-
-138
-00:05:37.670 --> 00:05:39.749
+aparece a la mitad del ciclo y 
 si logra pasar en ese ciclo,
-
-139
-00:05:39.749 --> 00:05:41.749
 lo cuál la mayoría logra en éste escenario base,
-
-140
-00:05:41.749 --> 00:05:44.550
 esos autos tendrán un promedio de 60
-
-141
-00:05:44.550 --> 00:05:47.270
-segundos de retraso de señal o medio ciclo.
-
-142
-00:05:47.270 --> 00:05:49.110
+segundos de retraso por señal o medio ciclo.
 Así es como todos esperan que la 
-
-143
-00:05:49.110 --> 00:05:51.590
-intersección opere. Y mientras que se 
-
-144
-00:05:51.590 --> 00:05:54.070
+intersección funcione. Y mientras que se 
 mantengan éstas condiciones de tráfico en el
-
-145
-00:05:54.070 --> 00:05:56.790
-modo de congestionamiento. Si se podría
-
-146
-00:05:56.790 --> 00:05:58.950
+modo de congestionamiento, se podría
 continuar añadiendo autos sin ningún retraso promedio
-
-147
-00:05:58.950 --> 00:06:01.670
 adicional. Por ejemplo puedo tomar mi
-
-148
-00:06:01.670 --> 00:06:04.950
 distribución aleatoria y reducirla
-
-149
-00:06:04.950 --> 00:06:07.189
 hasta que ya no haya ninguna congestión.
-
-150
-00:06:07.189 --> 00:06:10.150
 Ésto pasa más o menos al llegar a los 120 autos y
-
-151
-00:06:10.150 --> 00:06:12.550
 en ese caso el retraso promedio es 60
-
-152
-00:06:12.550 --> 00:06:14.469
 segundos. A nadie le toca esperar un 
-
-153
-00:06:14.469 --> 00:06:16.469
 ciclo extra. Es lo mejor que podemos lograr
-
-154
-00:06:16.469 --> 00:06:19.749
 pero al subir a 150 autos tenemos 
-
-155
-00:06:19.749 --> 00:06:23.189
 135 autos que están esperando 60 segundos únicamente
-
-156
-00:06:23.189 --> 00:06:25.590
 y tenemos 15 que les toca esperar un promedio de 
-
-157
-00:06:25.590 --> 00:06:28.710
 120 segundos adicionales. Lo que es un total de 
-
-158
-00:06:28.710 --> 00:06:33.189
 10 800 segundos, divididos en los 150 autos
-
-159
-00:06:33.189 --> 00:06:36.150
 eso es 72 segundos por auto en promedio y tomen en cuenta
-
-160
-00:06:36.150 --> 00:06:38.790
 que 8 de los 30 ciclos están ocupados 
-
-161
-00:06:38.790 --> 00:06:42.710
 completamente y 9 están sobre su capacidad
-
-162
-00:06:42.710 --> 00:06:45.590
 así que probablemente el próximo auto que aparezca 
-
-163
-00:06:45.590 --> 00:06:47.270
 va a tener que esperar un ciclo
-
-164
-00:06:47.270 --> 00:06:49.430
 adicional. Okay, así es cómo se ve el giro a la
-
-165
-00:06:49.430 --> 00:06:51.110
 izquierda cuando empieza a ponerse en
-
-166
-00:06:51.110 --> 00:06:53.430
 un estado congestionado. Ahora
-
-167
-00:06:53.430 --> 00:06:56.230
 Agreguemos 10 autos. Voy a incrementar mis
-
-168
-00:06:56.230 --> 00:06:58.710
 números sin redondear hasta que 
-
-169
-00:06:58.710 --> 00:07:00.469
 la distribución redondeada
-
-170
-00:07:00.469 --> 00:07:03.510
 llegue a los 160. Y así es cómo se ve.
-
-171
-00:07:03.510 --> 00:07:07.350
 Al parecer 10 de mis 32 incrementos secundarios
-
-172
-00:07:07.350 --> 00:07:09.430
 tienen un auto adicional. Éstos
-
-173
-00:07:09.430 --> 00:07:11.749
 autos empujan otros autos fuera del ciclo
-
-174
-00:07:11.749 --> 00:07:14.469
 y deberíamos de en verdad empezar a sentir
-
-175
-00:07:14.469 --> 00:07:17.029
 que ésto es un efecto dominó y
-
-176
-00:07:17.029 --> 00:07:19.110
 se va a poner peor progresivamente
-
-177
-00:07:19.110 --> 00:07:21.350
 cada vez que le añado 10 autos más. Éste
-
-178
-00:07:21.350 --> 00:07:24.150
-auto que se aparece en el 440 es el peor
-
-179
-00:07:24.150 --> 00:07:26.629
+auto que se aparece a las 4:40 es el peor
 de los casos, impacta los siguientes 4
-
-180
-00:07:26.629 --> 00:07:29.510
 ciclos añadiendo otros 120 segundos de 
-
-181
-00:07:29.510 --> 00:07:31.830
 retraso por cada vehículo en cada uno de
-
-182
-00:07:31.830 --> 00:07:34.230
 los cuatro ciclose siguientes. Al fin de cuentas
-
-183
-00:07:34.230 --> 00:07:37.990
 sólo añadí 10 autos. Lo que corresponde a 6.7 segundos
-
-184
-00:07:37.990 --> 00:07:40.309
 pero mi retraso promedio pasa de los 72
-
-185
-00:07:40.309 --> 00:07:44.469
 segundos a 81 y ése es un incremento promedio de 12.5
-
-186
-00:07:44.469 --> 00:07:48.469
 también 17 de mis 30 ciclos estaban justo a
-
-187
-00:07:48.469 --> 00:07:51.670
 capacidad o más cuando tenía 150 autos
-
-188
-00:07:51.670 --> 00:07:55.110
 ahora 20 de los 30 están así. Lo que, de nuevo,
-
-189
-00:07:55.110 --> 00:07:57.589
 está incrementando la probabilidad de que
-
-190
-00:07:57.589 --> 00:08:00.309
 el próximo auto le toque un ciclo que ya está 
-
-191
-00:08:00.309 --> 00:08:01.990
 completamente lleno. Voy a pasar por los siguientes
-
-192
-00:08:01.990 --> 00:08:03.749
 escenarios adicionales y hablar sobre
-
-193
-00:08:03.749 --> 00:08:07.189
 las implicaciones de reglamentos y etc. Pero primero
-
-194
-00:08:07.189 --> 00:08:09.110
 si le están sacando valor a éste video
-
-195
-00:08:09.110 --> 00:08:10.869
 por favor denle sus respetos al 
-
-196
-00:08:10.869 --> 00:08:13.670
 algoritmo de youtube y en general si disfrutan
-
-197
-00:08:13.670 --> 00:08:16.550
 exploraciones nerd de transporte en
-
-198
-00:08:16.550 --> 00:08:18.550
 ciudades, pásen y subsríbance si no lo han 
-
-199
-00:08:18.550 --> 00:08:20.869
 hecho ya. Se los agradezco mucho.
-
-200
-00:08:20.869 --> 00:08:22.469
 Okay, no voy a entrar a fondo en los
-
-201
-00:08:22.469 --> 00:08:24.629
 detalles de los escenarios que quedan
-
-202
-00:08:24.629 --> 00:08:26.950
 porque es la misma historia y sólo se pone
-
-203
-00:08:26.950 --> 00:08:29.510
 más caótica. Pero ésto es lo que pasa.
-
-204
-00:08:29.510 --> 00:08:32.709
 A los 170 autos el promedio de retraso es 98
-
-205
-00:08:32.709 --> 00:08:35.110
 segundos así que incrementamos el volúmen de tráfico 
-
-206
-00:08:35.110 --> 00:08:39.509
 original de 150 por 13.3% pero el retraso 
-
-207
-00:08:39.509 --> 00:08:41.829
 promedio es de 36 segundos
-
-208
-00:08:41.829 --> 00:08:44.630
 Luego a los 180 el retraso promedio es de
-
-209
-00:08:44.630 --> 00:08:48.310
 144 segundos. Osea que al aumentar tu
-
-210
-00:08:48.310 --> 00:08:50.230
 volúmen de tráfico por 20%
-
-211
-00:08:50.230 --> 00:08:52.070
 le incrementas el retraso promedio por cada auto
-
-212
-00:08:52.070 --> 00:08:55.190
 por 100%; lo duplicamos.
-
-213
-00:08:55.190 --> 00:08:57.110
 Recuerden que ésta es la misma curva de 
-
-214
-00:08:57.110 --> 00:08:59.350
 demanda aleatoria con la que empezé sólo la estoy ajustando
-
-215
-00:08:59.350 --> 00:09:01.190
 hacia arriba o abajo, el porcentaje preciso
-
-216
-00:09:01.190 --> 00:09:04.230
 que estoy mencionando va a cambiar si
-
-217
-00:09:04.230 --> 00:09:05.910
 empiezo con un número aleatorio diferente
-
-218
-00:09:05.910 --> 00:09:08.550
 inicial pero la historia en sí siempre va
-
-219
-00:09:08.550 --> 00:09:10.790
 a ser éste mismo crecimiento
-
-220
-00:09:10.790 --> 00:09:13.030
 exponencial y en realidad a éstas alturas
-
-221
-00:09:13.030 --> 00:09:15.110
 la genta va a empezar a buscar diferentes rutas
-
-222
-00:09:15.110 --> 00:09:17.590
 para evitar éste giro a la izquierda.
-
-223
-00:09:17.590 --> 00:09:20.389
 Van a tomar el bus, ir en bicicleta, o ajustar
-
-224
-00:09:20.389 --> 00:09:23.110
 su hora de partida o simplemente no salir
-
-225
-00:09:23.110 --> 00:09:25.430
 del todo y el ingeniero de tráfico de la ciudad
-
-226
-00:09:25.430 --> 00:09:27.350
 definitivamente va a recibir llamadas al respecto.
-
-227
-00:09:27.350 --> 00:09:30.630
 Así que un par de notas antes, a pesar de
-
-228
-00:09:30.630 --> 00:09:32.949
 la forma en que yo caracterizo aquí 
-
-229
-00:09:32.949 --> 00:09:35.190
 la dinámica de tráfico no hay tal tráfico
-
-230
-00:09:35.190 --> 00:09:37.829
 existente que simplemente esté sin molestar
-
-231
-00:09:37.829 --> 00:09:40.630
 a nadie y tráfico adicional que sea el que está
-
-232
-00:09:40.630 --> 00:09:42.710
 causando todos los problemas. Si el 
-
-233
-00:09:42.710 --> 00:09:45.190
 tránsito está en un estado congestionado entonces
-
-234
-00:09:45.190 --> 00:09:47.509
 cada conductor es igualmente responsable
-
-235
-00:09:47.509 --> 00:09:50.310
 de la culpa y las consecuencias.
-
-236
-00:09:50.310 --> 00:09:52.550
-Cómo un conductor percivimos la congestión como
-
-237
-00:09:52.550 --> 00:09:54.550
+Cómo un conductor percibimos la congestión como
 algo que nos está pasando pero,
-
-238
-00:09:54.550 --> 00:09:57.190
 la realidad es que tú eres la congestión.
-
-239
-00:09:57.190 --> 00:09:58.710
 Segundo, consideren que éste es un modelo muy
-
-240
-00:09:58.710 --> 00:10:01.190
 simplificado y el tráfico urbano es
-
-241
-00:10:01.190 --> 00:10:03.670
 dinámico y complejo, y la congestión
-
-242
-00:10:03.670 --> 00:10:06.710
 se manifiesta en muchas formas, por ejemplo
-
-243
-00:10:06.710 --> 00:10:09.430
 en un estado congestionado, ese ciclo de 12
-
-244
-00:10:09.430 --> 00:10:11.590
 del giro a la izquierda puede que no pueda
-
-245
-00:10:11.590 --> 00:10:14.389
 acomodar 6 autos que podrían haber venido
-
-246
-00:10:14.389 --> 00:10:16.630
 de otro embotellamiento más adelante
-
-247
-00:10:16.630 --> 00:10:18.870
 lo cual bloquea el carril receptor.
-
-248
-00:10:18.870 --> 00:10:21.190
 Podrías tener encolamiento excesivo en el
-
-249
-00:10:21.190 --> 00:10:24.230
 carril sin giro lo cual bloquea la cola para la izquierda
-
-250
-00:10:24.230 --> 00:10:26.230
 y ya no podrías encolar los 6 vehículos por ciclo
-
-251
-00:10:26.230 --> 00:10:28.710
 en el revés de los casos, el carril de giro puede
-
-252
-00:10:28.710 --> 00:10:31.030
 sobrellenarse y bloquear el carril sin giro.
-
-253
-00:10:31.030 --> 00:10:33.910
 Y todas éstas son maneras en las que
-
-254
-00:10:33.910 --> 00:10:36.710
 las condiciones congestionadas reducen la
-
-255
-00:10:36.710 --> 00:10:39.269
 eficiencia del sistema. Así que lo que les 
-
-256
-00:10:39.269 --> 00:10:41.190
 presenté aquí es más que nada un
-
-257
-00:10:41.190 --> 00:10:43.829
 escenario optimista, así que el punto que espero que
-
-258
-00:10:43.829 --> 00:10:46.310
 se lleven es que no sólo los autos adicionales
-
-259
-00:10:46.310 --> 00:10:48.710
 crean más congestión, sino que cada auto adicional
-
-260
-00:10:48.710 --> 00:10:51.269
 crea más congestión exponencialmente.
-
-261
-00:10:51.269 --> 00:10:54.310
 Lo cual es malo para todos así que
-
-262
-00:10:54.310 --> 00:10:56.630
 ¿Cuál es la solución? para algunas personas,
-
-263
-00:10:56.630 --> 00:10:58.949
 usualmente las personas que están a cargo de la
-
-264
-00:10:58.949 --> 00:11:00.790
 política víal y los fondos públicos, tódo esto
-
-265
-00:11:00.790 --> 00:11:03.110
 sugiere que en realidad lo que necesitan es
-
-266
-00:11:03.110 --> 00:11:05.430
 construir caminos e intersecciones tan grandes como
-
-267
-00:11:05.430 --> 00:11:07.269
 sea posible para que nunca lleguemos a un estado
-
-268
-00:11:07.269 --> 00:11:09.269
 congestionado. Pueden ir prácticamente a cualquier
-
-269
-00:11:09.269 --> 00:11:11.990
 Estado en los Estados Unidos y ver éste criterio
-
-270
-00:11:11.990 --> 00:11:14.949
 en práctica y decidir por si mismos si de verdad
-
-271
-00:11:14.949 --> 00:11:17.269
 funciona o no. Otra enfoque es
-
-272
-00:11:17.269 --> 00:11:19.910
 asegurarse de que las alternativas a conducir
-
-273
-00:11:19.910 --> 00:11:22.870
 sean abundantes y competitivas así que 
-
-274
-00:11:22.870 --> 00:11:24.949
 cuando el tráfico empieze a ponerse hyper
-
-275
-00:11:24.949 --> 00:11:27.509
 congestionado la gente tenga la libertad
-
-276
-00:11:27.509 --> 00:11:31.110
 de tomar otras decisiones, o tal vez, escúchenme
-
-277
-00:11:31.110 --> 00:11:33.590
 ponerle precio a la congestión, lograr que la 
-
-278
-00:11:33.590 --> 00:11:36.470
 gente pague por el privilegio de conducir en una
-
-279
-00:11:36.470 --> 00:11:40.310
 red víal eficiente, confiable y sin congestión, e invertir
-
-280
-00:11:40.310 --> 00:11:42.550
 los fondos en otros medios de tránsito y transporte
-
-281
-00:11:42.550 --> 00:11:44.710
 activo. Hice que eso suene fácil.
-
-282
-00:11:44.710 --> 00:11:46.470
 Hay mucho que discutir allí y probablemente
-
-283
-00:11:46.470 --> 00:11:48.949
 lo voy a hacer en un video futuro pero sientanse
-
-284
-00:11:48.949 --> 00:11:50.629
 libres de dejarme saber lo que piensan
-
-285
-00:11:50.629 --> 00:11:52.550
 sobre el ponerle precio a la congestión en los
-
-286
-00:11:52.550 --> 00:11:55.030
 comentario abajo y eso es todo lo que tengo
-
-287
-00:11:55.030 --> 00:11:57.030
-por hoy. Sigan mandandome sus comentarios geniales
-
-288
-00:11:57.030 --> 00:11:59.030
-y sugerencias del público. Si que 
-
-289
-00:11:59.030 --> 00:12:00.710
-hacen éste un mejor canal, gracias por
-
-290
-00:12:00.710 --> 00:12:02.629
+por hoy. Sigan mandandome sus
+comentarios y sugerencias. 
+Si que hacen éste un mejor canal, gracias por
 venir y volveré con un tema nuevo
-
-291
-00:12:02.629 --> 00:12:06.720
 la próxima semana así que los veré entonces!
-

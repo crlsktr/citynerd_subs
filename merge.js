@@ -1,10 +1,13 @@
 const fs = require("fs");
-
-const spa = fs.readFileSync("cHSCmQnGH9Q.spa.txt",'utf-8').split('\n')
-const times = fs.readFileSync("cHSCmQnGH9Q.times.txt",'utf-8').split('\n')
+const videoCode = process.argv[2];
+const spa = fs.readFileSync(`${videoCode}/spa.txt`,'utf-8').split('\n')
+const times = fs.readFileSync(`${videoCode}/times.txt`,'utf-8').split('\n')
 spa.forEach((line,index) => {
-    console.log(index+1);
-    console.log(times[index]);
-    console.log(line);
-    console.log();
+    if (!!times[index] && !!line)
+    {
+        console.log(index+1);
+        console.log(times[index]);
+        console.log(line);
+        console.log();
+    }
 });
